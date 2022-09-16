@@ -1,0 +1,23 @@
+{
+    "contact": {
+      "firstName": "Wylie",
+      "lastName": "Gilbert",
+      "email": "foreverlove@test.com",
+      "favoriteColor": "Blue",
+      "birthday": "09/04/87"
+    },
+    "contact2": {
+      "firstName": "Daniela",
+      "lastName": "Romero",
+      "email": "sista@test.com",
+      "favoriteColor": "Pink",
+      "birthday": "09/22/06"
+    },
+    "contact3": {
+      "firstName": "Lucia",
+      "lastName": "Mazo",
+      "email": "bestmom@test.com",
+      "favoriteColor": "Red",
+      "birthday": "03/03/77"
+    }
+  }
