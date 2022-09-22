@@ -4,3 +4,48 @@ GET http://localhost:8080/contacts
 
 ### Get contact by id
 GET http://localhost:8080/contacts/6324af8badf6b97f0e6eee71
+
+### Create contact POST http://localhost:8080/contacts HTTP/1.1 content-type: application/json
+{
+"firstName": "Daniela",
+"lastName": "Romero",
+"email": "sista@test.com",
+"favoriteColor": "Pink",
+"birthday": "09/22/06"
+}
+
+### PUT contact PUT http://localhost:8080/contacts/6324af8badf6b97f0e6eee73 HTTP/1.1 content-type: application/json
+{
+"firstName": "Lucia",
+"lastName": "Mazo",
+"email": "bestmom@test.com",
+"favoriteColor": "Red",
+"birthday": "03/03/77"
+}
+
+### DELETE contact DELETE http://localhost:8080/contacts/6324af8badf6b97f0e6eee72 HTTP/1.1
+
+// PRODUCTION Deploy ### Get all contacts GET https://cse341cgtest.onrender.com/contacts
+
+### Get contact by id GET https://cse341cgtest.onrender.com/contacts/6324af8badf6b97f0e6eee71
+
+### Create contact POST https://cse341cgtest.onrender.com/contacts HTTP/1.1 content-type: application/json
+{
+"firstName": "Daniela",
+"lastName": "Romero",
+"email": "sista@test.com",
+"favoriteColor": "Pink",
+"birthday": "09/22/06"
+}
+
+### PUT contact PUT https://cse341cgtest.onrender.com/contacts/6324af8badf6b97f0e6eee73 HTTP/1.1 content-type: application/json
+
+{
+"firstName": "Lucia",
+"lastName": "Mazo",
+"email": "bestmom@test.com",
+"favoriteColor": "Red",
+"birthday": "03/03/77"
+}
+
+### DELETE contact DELETE https://cse341cgtest.onrender.com/contacts/6324af8badf6b97f0e6eee72 HTTP/1.1
