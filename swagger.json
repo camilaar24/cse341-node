@@ -5,18 +5,21 @@
     "description": "Contact API",
     "version": "1.0.0"
   },
-  "host": "cse341cgtest.onrender.com",
+  "host": "localhost:8080",
   "basePath": "/",
-  "schemes": [
-    "https"
-  ],
+  "schemes": ["https"],
   "paths": {
+    "/api-docs": {
+      "get": {
+        "description": "",
+        "parameters": [],
+        "responses": {}
+      }
+    },
     "/contacts/": {
       "get": {
         "description": "",
-        "produces": [
-          "application/json"
-        ],
+        "produces": ["application/json"],
         "parameters": [],
         "responses": {
           "200": {
@@ -26,6 +29,7 @@
       },
       "post": {
         "description": "",
+        "produces": ["application/json"],
         "parameters": [
           {
             "name": "body",
@@ -33,19 +37,19 @@
             "schema": {
               "type": "object",
               "properties": {
-                "firstName": {
+                "firstname": {
                   "example": "any"
                 },
-                "lastName": {
+                "lastname": {
                   "example": "any"
                 },
                 "email": {
                   "example": "any"
                 },
-                "favoriteColor": {
+                "favourite_color": {
                   "example": "any"
                 },
-                "birthday": {
+                "birthdate": {
                   "example": "any"
                 }
               }
@@ -65,9 +69,7 @@
     "/contacts/{id}": {
       "get": {
         "description": "",
-        "produces": [
-          "application/json"
-        ],
+        "produces": ["application/json"],
         "parameters": [
           {
             "name": "id",
@@ -97,19 +99,19 @@
             "schema": {
               "type": "object",
               "properties": {
-                "firstName": {
+                "firstname": {
                   "example": "any"
                 },
-                "lastName": {
+                "lastname": {
                   "example": "any"
                 },
                 "email": {
                   "example": "any"
                 },
-                "favoriteColor": {
+                "favourite_color": {
                   "example": "any"
                 },
-                "birthday": {
+                "birthdate": {
                   "example": "any"
                 }
               }

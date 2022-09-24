@@ -1,14 +1,7 @@
-const router = require('express').Router();
-const contact = require('./contacts');
+const express = require('express');
+const router = express.Router();
 
 router.use('/', require('./swagger'));
-router.use('/contacts', contact);
-router.use(
-  '/',
-  (docData = (req, res) => {
-    let docData = "Hello world! Contacts API";
-    res.send(docData);
-  })
-);
+router.use('/contacts', require('./contacts'));
 
 module.exports = router;
